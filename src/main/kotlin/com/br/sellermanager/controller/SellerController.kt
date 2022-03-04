@@ -2,6 +2,7 @@ package com.br.sellermanager.controller
 
 import com.br.sellermanager.controller.api.SellerControllerApi
 import com.br.sellermanager.model.dto.SellerIn
+import com.br.sellermanager.model.dto.SellerOut
 import com.br.sellermanager.service.SellerService
 import org.springframework.http.HttpStatus.CREATED
 import org.springframework.http.ResponseEntity
@@ -14,6 +15,10 @@ class SellerController(private val sellerService: SellerService) : SellerControl
         sellerService.saveSeller(sellerIn)
 
         return ResponseEntity(CREATED)
+    }
+
+    override fun searchSeller(id: String): SellerOut {
+        return sellerService.searchSeller(id)
     }
 
 }
