@@ -3,6 +3,7 @@ package com.br.sellermanager.service.impl
 import com.br.sellermanager.convertSellerInToSeller
 import com.br.sellermanager.model.dto.SellerIn
 import com.br.sellermanager.model.dto.SellerOut
+import com.br.sellermanager.model.dto.SellerOutList
 import com.br.sellermanager.repository.ActingRepository
 import com.br.sellermanager.repository.SellerRepository
 import com.br.sellermanager.service.SellerService
@@ -32,5 +33,20 @@ class SellerServiceImpl(
                 states = acting.get().states
             )
         }.orElseThrow { ResponseStatusException(HttpStatus.NO_CONTENT) }
+    }
+
+    override fun searchSellers(): List<SellerOutList> {
+        return sellerRepository.findAll().map { seller ->
+            val acting = actingRepository.findById(seller.region)
+
+            SellerOutList(
+                name = seller.name,
+                telephone = seller.telephone,
+                age = seller.age,
+                city = seller.city,
+                state = seller.state,
+                states = acting.get().states
+            )
+        }.ifEmpty { throw ResponseStatusException(HttpStatus.NO_CONTENT) }
     }
 }
