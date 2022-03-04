@@ -1,19 +1,19 @@
 package com.br.sellermanager
 
-import com.br.sellermanager.model.Vendedor
-import com.br.sellermanager.model.dto.VendedorIn
+import com.br.sellermanager.model.Seller
+import com.br.sellermanager.model.dto.SellerIn
 import java.time.LocalDate
 import java.util.*
 
-fun convertVendedorInEmVendedor(vendedorIn: VendedorIn): Vendedor {
-    return Vendedor(
+fun convertSellerInToSeller(sellerIn: SellerIn): Seller {
+    return Seller(
         id = UUID.randomUUID().toString(),
-        nome = vendedorIn.nome,
-        telefone = vendedorIn.telefone,
-        idade = vendedorIn.idade,
-        cidade = vendedorIn.cidade,
-        estado = vendedorIn.estado,
-        regiao = vendedorIn.regiao,
-        dataInclusao = LocalDate.now()
+        name = sellerIn.name,
+        telephone = sellerIn.telephone,
+        age = sellerIn.age,
+        city = sellerIn.city,
+        state = sellerIn.state,
+        region = sellerIn.region,
+        dateInclusion = LocalDate.now()
     )
 }
