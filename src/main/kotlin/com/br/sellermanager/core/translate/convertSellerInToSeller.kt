@@ -1,4 +1,4 @@
-package com.br.sellermanager
+package com.br.sellermanager.core.translate
 
 import com.br.sellermanager.core.model.Seller
 import com.br.sellermanager.core.model.dto.SellerIn

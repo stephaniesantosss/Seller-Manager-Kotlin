@@ -1,6 +1,6 @@
 package com.br.sellermanager.core.service.impl
 
-import com.br.sellermanager.convertSellerInToSeller
+import com.br.sellermanager.core.translate.convertSellerInToSeller
 import com.br.sellermanager.core.model.dto.SellerIn
 import com.br.sellermanager.core.model.dto.SellerOut
 import com.br.sellermanager.core.model.dto.SellerOutList
