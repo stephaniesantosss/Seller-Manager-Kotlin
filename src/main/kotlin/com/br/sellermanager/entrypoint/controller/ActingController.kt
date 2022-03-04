@@ -1,8 +1,8 @@
-package com.br.sellermanager.controller
+package com.br.sellermanager.entrypoint.controller
 
-import com.br.sellermanager.controller.api.ActingControllerApi
-import com.br.sellermanager.model.dto.ActingIn
-import com.br.sellermanager.service.ActingService
+import com.br.sellermanager.entrypoint.controller.api.ActingControllerApi
+import com.br.sellermanager.core.model.dto.ActingIn
+import com.br.sellermanager.core.service.ActingService
 import org.springframework.http.HttpStatus.CREATED
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.RestController

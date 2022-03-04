@@ -1,7 +1,7 @@
 package com.br.sellermanager
 
-import com.br.sellermanager.model.Seller
-import com.br.sellermanager.model.dto.SellerIn
+import com.br.sellermanager.core.model.Seller
+import com.br.sellermanager.core.model.dto.SellerIn
 import java.time.LocalDate
 import java.util.*
 

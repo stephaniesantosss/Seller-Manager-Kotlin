@@ -1,4 +1,4 @@
-package com.br.sellermanager.model.dto
+package com.br.sellermanager.core.model.dto
 
 data class ActingIn(
     val region: String,

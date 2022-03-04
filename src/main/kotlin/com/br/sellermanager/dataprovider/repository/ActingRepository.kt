@@ -1,6 +1,6 @@
-package com.br.sellermanager.repository
+package com.br.sellermanager.dataprovider.repository
 
-import com.br.sellermanager.model.Acting
+import com.br.sellermanager.core.model.Acting
 import org.springframework.data.mongodb.repository.MongoRepository
 import org.springframework.stereotype.Repository
 

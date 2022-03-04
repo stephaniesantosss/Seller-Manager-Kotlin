@@ -1,12 +1,12 @@
-package com.br.sellermanager.service.impl
+package com.br.sellermanager.core.service.impl
 
 import com.br.sellermanager.convertSellerInToSeller
-import com.br.sellermanager.model.dto.SellerIn
-import com.br.sellermanager.model.dto.SellerOut
-import com.br.sellermanager.model.dto.SellerOutList
-import com.br.sellermanager.repository.ActingRepository
-import com.br.sellermanager.repository.SellerRepository
-import com.br.sellermanager.service.SellerService
+import com.br.sellermanager.core.model.dto.SellerIn
+import com.br.sellermanager.core.model.dto.SellerOut
+import com.br.sellermanager.core.model.dto.SellerOutList
+import com.br.sellermanager.dataprovider.repository.ActingRepository
+import com.br.sellermanager.dataprovider.repository.SellerRepository
+import com.br.sellermanager.core.service.SellerService
 import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Service
 import org.springframework.web.server.ResponseStatusException
